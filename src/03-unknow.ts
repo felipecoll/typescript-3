@@ -18,7 +18,8 @@ if (typeof unknowVar === 'string') {
    unknowVar.toUpperCase();
 }
 
-const parse = (str: string) => {
+const parse = (str: string): unknown => {
    return JSON.parse(str);
 }
+
 const user = parse('{"name": "John"}');
